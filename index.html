@@ -545,55 +545,60 @@
 
         <div class="phase phase-1">
             <div class="phase-title">Phase 1: 기반 구축 (1~3개월)</div>
-            <div class="phase-goal">목표: 현황 진단 및 PoC 설계</div>
+            <div class="phase-goal">목표: 현황 진단 및 자체 개발 설계</div>
             <ul>
                 <li>현행 라벨링 프로세스 매핑 (AS-IS 분석)</li>
                 <li>주요 Pain Point 정량화 (오류 발생률, 리뷰 소요시간, 리콜 비용)</li>
-                <li>AI 솔루션 벤더 평가 및 PoC 대상 선정</li>
-                <li>식약처 표시기준 고시 데이터 구조화 착수</li>
+                <li>자체 개발팀 구성 (AI/ML 엔지니어, 데이터 엔지니어, 풀스택 개발자)</li>
+                <li>식약처 표시기준 고시 데이터 구조화 및 자체 규제 DB 스키마 설계</li>
+                <li>OCR/NLP 오픈소스 모델 벤치마크 및 기술 스택 확정</li>
                 <li>PoC 범위 확정 (예: 비타500 라인 라벨 검증 자동화)</li>
             </ul>
-            <div class="phase-output">산출물: AS-IS 분석서, PoC 계획서, 벤더 평가표</div>
+            <div class="phase-output">산출물: AS-IS 분석서, PoC 계획서, 기술 스택 확정서, 개발팀 구성안</div>
         </div>
 
         <div class="phase phase-2">
-            <div class="phase-title">Phase 2: PoC 실행 (4~6개월)</div>
-            <div class="phase-goal">목표: 핵심 기능 검증</div>
+            <div class="phase-title">Phase 2: PoC 자체 개발 (4~6개월)</div>
+            <div class="phase-goal">목표: 핵심 모듈 자체 개발 및 검증</div>
             <ul>
-                <li>OCR + NLP 기반 라벨 자동 검증 파일럿 구축</li>
-                <li>비타500·옥수수수염차 등 주력 제품 대상 테스트</li>
+                <li>자체 OCR 엔진 개발 (한국어·한방 원재료 특화 학습)</li>
+                <li>NLP 규정 대조 모델 파인튜닝 (식약처 고시 데이터 기반)</li>
+                <li>자체 규제 DB 구축 (식품등의 표시기준, 건강기능식품 기준 등)</li>
+                <li>비타500·옥수수수염차 등 주력 제품 대상 파일럿 테스트</li>
                 <li>식약처 규정 대비 자동 적합성 판정 정확도 측정</li>
-                <li>기존 프로세스 대비 시간·비용 절감 효과 산출</li>
-                <li>사용자(식품안전팀) 피드백 수집</li>
+                <li>사용자(식품안전팀) 피드백 수집 및 모델 개선</li>
             </ul>
-            <div class="phase-output">산출물: PoC 결과 보고서, ROI 분석, Go/No-Go 판단</div>
+            <div class="phase-output">산출물: PoC 결과 보고서, 자체 모델 성능 리포트, Go/No-Go 판단</div>
         </div>
 
         <div class="phase phase-3">
-            <div class="phase-title">Phase 3: MVP 개발 (7~12개월)</div>
-            <div class="phase-goal">목표: 운영 가능 시스템 구축</div>
+            <div class="phase-title">Phase 3: MVP 자체 개발 (7~12개월)</div>
+            <div class="phase-goal">목표: 자체 통합 시스템 구축</div>
             <ul>
-                <li>전체 국내 제품군 라벨 검증 시스템 개발</li>
-                <li>ERP/MES 연동 개발</li>
-                <li>규제 DB 정기 업데이트 파이프라인 구축</li>
-                <li>e-라벨(QR) 콘텐츠 자동 생성 기능 개발</li>
-                <li>아트워크 프루핑 모듈 통합</li>
+                <li>전체 국내 제품군 라벨 검증 시스템 자체 개발</li>
+                <li>자체 규칙 엔진 개발 (Python 기반 규제 조건 판정)</li>
+                <li>ERP/MES 연동 모듈 자체 개발</li>
+                <li>규제 DB 자동 크롤링·업데이트 파이프라인 구축</li>
+                <li>e-라벨(QR) 콘텐츠 자동 생성 시스템 자체 개발</li>
+                <li>아트워크 프루핑 비전 모델 자체 개발 및 통합</li>
                 <li>사내 교육 및 변화관리 프로그램 실시</li>
             </ul>
-            <div class="phase-output">산출물: MVP 시스템, 운영 매뉴얼, 교육 자료</div>
+            <div class="phase-output">산출물: MVP 시스템 (전 모듈 자체 개발), 운영 매뉴얼, 교육 자료</div>
         </div>
 
         <div class="phase phase-4">
             <div class="phase-title">Phase 4: 확장 및 고도화 (13~18개월)</div>
-            <div class="phase-goal">목표: 전사 확산 및 수출 대응</div>
+            <div class="phase-goal">목표: 전사 확산, 수출 대응 및 자체 플랫폼 완성</div>
             <ul>
-                <li>수출 제품 다국가 규제 검증 기능 추가</li>
-                <li>건강기능식품 기능성 표시·광고 심의 자동화</li>
-                <li>신제품 개발 단계 연동 (배합&rarr;라벨 원스톱)</li>
-                <li>AI 모델 지속 학습 및 정확도 고도화</li>
+                <li>다국가 규제 DB 자체 확장 (일본·중국·동남아·미국·EU)</li>
+                <li>수출 제품 다국가 규제 검증 기능 자체 개발</li>
+                <li>건강기능식품 기능성 표시·광고 심의 자동화 모듈 추가</li>
+                <li>신제품 개발 단계 연동 (배합&rarr;라벨 원스톱 자체 워크플로)</li>
+                <li>AI 모델 지속 학습 파이프라인 자동화 (MLOps 체계 구축)</li>
                 <li>식약처 푸드QR 정책 연동 완성</li>
+                <li>자체 플랫폼 외부 라이선싱 검토 (신규 수익원 창출)</li>
             </ul>
-            <div class="phase-output">산출물: 전사 운영 시스템, 성과 보고서</div>
+            <div class="phase-output">산출물: 전사 자체 운영 시스템, 성과 보고서, 플랫폼 라이선싱 검토서</div>
         </div>
     </section>
 
